@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 🔹 Variáveis CSS</title>
+
+    <style>
+        /* Vaiáveis CSS
+        Usa-se o pseudo-classe :root */
+        :root {
+            /* Sintaxe
+          --nome: valor; */
+            --cor: rgb(55, 61, 141);
+            --fonte: Arial;
+            --sombratexto: rgb(0, 174, 255) 1px 1px 5px;
+            --espacamentoInterno: 4px;
+            --bordaDestaque: dashed 2px;
+        }
+
+        h1 {
+            color: var(--cor);
+            text-shadow: var(--sombratexto);
+        }
+
+        h2 {
+            border: solid 2px var(--cor);
+            font-family: var(--fonte);
+            padding: var(--espacamentoInterno);
+        }
+
+        p {
+            font-family: var(--fonte);
+            border: var(--bordaDestaque) rgb(0, 174, 255);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Usando Variáveis CSS</h1>
+    <hr>
+
+    <h2>Front-End</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, corrupti.</p>
+
+    <h2>Beck-End</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, harum?</p>
+
+</body>
+
+</html>

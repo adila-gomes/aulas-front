@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocos Semânticos</title>
+    <style>
+        /* Sintaxe de uma regra/declaração CSS
+           seletor { propriedade: valor; } 
+           
+           Tipos de seletor:
+           TAG: "casa/seleciona/aponta" diretamente para a(s) tag(s) indicadas na regra.
+         */
+        /* FOLHA DE ESTILOS INTERNA */
+
+        /* regras CSS */
+        html {scroll-behavior: smooth}
+        /* usado para suavisar a rolagem da página */
+
+        h1 {
+            color: rgb(79, 150, 218);
+            text-align: center;
+        }
+
+        p{font-size: 25px;
+        }
+
+        hr{
+            height: 16px;
+            background-color: rgb(25, 168, 204);
+            border-color: rgb(250, 62, 4);
+            border-width: 6px; /*  */
+            border-style: dashed; /* Estilo da borda */
+            border-radius: 6px; /* Borda arredondada */
+            opacity: 0.5; /* Opacidade */
+        }
+
+        h2{
+            text-transform: uppercase;
+            font-family: 'Verdana', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            font-family: Verdana;
+        }
+
+        h3{
+            font-size: 20px;
+            font-family: Impact;
+            text-align:right;
+            border-bottom-color: orange; /* Border-botom - borda inferior */
+            border-bottom-width: 4px;  
+            border-bottom-style: solid ;
+            font-weight: normal; /* Tira o negrito da fonte */
+            letter-spacing: 4px; /* Espaço entre as letras */
+            word-spacing: 15px; /* Espaço entre as palavras */
+            text-decoration: overline; /* Decoração somente nas palavras */
+            text-decoration-thickness: 4px; /* Altera a largura da linha */
+            padding-right: 4px; /* Espaçamento da margem */
+            margin-left: 4px; /* Espaçamento da margem, porém muda tudo */
+        }
+
+        article{
+            background-color: rgb(157, 206, 235);
+            border-radius: 10px;
+            padding: 10px; /* Espaçamento da margem */
+            box-shadow: black 5px 5px; /* Sombra na caixa */
+            margin-bottom: 20px; /* Espaçamento fora da margem */
+        }
+
+        header {
+            background: linear-gradient(to left ,pink, transparent); /* Não pode ter espaço entre o valor e a função */
+            /* Transparência de um cor para a outra. */
+            /* Para usar um efeito de cores/um efeito entre uma cor e outra, usar o beckgroud sozinho. Pode usar mais de uma cor */
+            /* Para mudar a direção das cores, colocar o comnado co começo, sempre separado por virgula. */
+            position: sticky; /* Fixa na página e acompanha o rolamento */
+            top: 0; /* Indica que deverá ficar fixo no começo ds página */
+        }
+
+    </style>
+</head>
+
+<body>
+    <header> <!-- Cabeçario da página -->
+        <h1> (COM CSS INTERNO) Tags semânticas</h1>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="#mpb">MPB</a></li>
+                <li><a href="#funk">Funk</a></li>
+                <li><a href="#rock">Rock</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <article id="mpb">
+            <h2>MPB</h2>
+
+            <!-- (p>lorem)*5 para fazer texto  -->
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, dolores aliquid laudantium temporibus
+                tenetur
+                consectetur sit ducimus architecto hic! Similique beatae minus aspernatur optio velit consequuntur
+                distinctio
+                asperiores earum cupiditate.</p>
+            <p>Totam veritatis necessitatibus quasi eos culpa numquam! Repellat cumque sint, itaque nesciunt mollitia
+                excepturi
+                deserunt blanditiis voluptatum, numquam assumenda dolore molestiae non nemo optio, odit perferendis
+                ipsa?
+                Inventore, recusandae temporibus.</p>
+            <p>Ut, vitae harum iste hic nemo vero ad cupiditate. Excepturi iure deserunt, maxime vero eveniet
+                consequuntur
+                maiores ducimus quod cum? Omnis, consectetur aliquid? Quidem voluptas veritatis eligendi aspernatur
+                dicta
+                ab.
+            </p>
+            <p>Eaque dignissimos nesciunt nisi illo consequuntur modi quidem magni dolorum repellat voluptatem iure,
+                eius
+                rem
+                sapiente nobis dolores id facere harum necessitatibus sequi facilis laudantium nemo nostrum consequatur!
+                Reprehenderit, sunt.</p>
+            <p>Quo accusamus quidem ipsa velit nesciunt aperiam repudiandae pariatur voluptatum ex aut provident
+                suscipit
+                asperiores, perferendis quisquam quod ut commodi consectetur. Aspernatur voluptate a amet enim porro.
+                Minus,
+                nesciunt molestias.</p>
+
+            <section>
+                <h3>Maria Gadu</h3>
+                <p>Loren Impseun dolor sit smerconsc</p>
+            </section>
+
+        </article>
+
+        <article id="funk">
+            <h2>Funk</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quasi deleniti distinctio quos fugiat
+                at?
+            </p>
+            <p>Porro, vel ipsa alias eveniet aut ipsam obcaecati, consectetur et atque provident blanditiis libero est?
+            </p>
+            <p>Eos, architecto dicta non maxime quod quos accusantium aperiam fugiat perspiciatis odit laudantium?
+                Blanditiis,
+                deleniti.</p>
+            <p>Ab fugit quidem quaerat iusto eaque itaque odio temporibus neque fuga, explicabo impedit consequuntur
+                repellendus.</p>
+            <p>Ipsa aperiam deserunt quidem numquam repudiandae! Repudiandae ducimus nesciunt nobis magni nisi sapiente
+                non
+                accusamus.</p>
+            <p>Optio culpa, nostrum aliquam unde incidunt doloribus mollitia ipsum qui quod. Exercitationem expedita
+                cupiditate
+                dolore?</p>
+            <p>Tempora tenetur aperiam illo consectetur? Architecto aut minus iure, qui sapiente ut nulla perspiciatis
+                fuga.
+            </p>
+
+            <section>
+                <h3>Mc Kevinho</h3>
+                <p>Lorem Ipsum dolor sit amet</p>
+            </section>
+
+        </article>
+
+        <article id="rock">
+            <h2>Rock</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda asperiores aperiam voluptatibus quasi
+                adipisci quaerat rem illo! Architecto, sit obcaecati.</p>
+            <p>Modi quidem officia quaerat consequuntur quisquam sapiente vel voluptatum fugiat culpa aspernatur ipsa
+                architecto
+                deleniti minima porro, reiciendis maiores officiis!</p>
+            <p>Corporis animi accusamus sequi voluptatum dolorum vitae, velit debitis quos iure vel labore commodi
+                minima
+                placeat at dolorem mollitia rem.</p>
+            <p>Quod aut autem iste ullam odio animi neque voluptatem mollitia nostrum alias! Natus harum dicta culpa,
+                similique
+                ut non odit!</p>
+            <p>Obcaecati quod eos enim dolores illum, aperiam facilis quidem laboriosam doloribus veritatis ut cum
+                quaerat
+                error
+                molestiae odio repellat quo?</p>
+            <p>Porro, vel laudantium perferendis veritatis pariatur aperiam rem similique nemo magnam ut? Provident
+                minima
+                quia
+                maxime corrupti, minus quod eius!</p>
+            <p>Odit deleniti voluptatem facilis quas eveniet! Accusantium cum repellat suscipit nostrum omnis quasi,
+                corrupti
+                eveniet consectetur eum dolorum ipsam repellendus!</p>
+            <p>Harum consequuntur tempore, tenetur facere voluptates officiis culpa, dolorum nihil impedit iure labore
+                ab
+                adipisci nulla quia beatae quaerat corporis?</p>
+
+            <section>
+                <h3>ACDC</h3>
+                <p>Lorem Ipsum dolor sit amet</p>
+            </section>
+
+
+            <aside>
+                <h4>Saiba mais nos canais oficiais</h4>
+                <ul>
+                    <li><a href="">Site Oficial</a></li>
+                    <li><a href="">Canal no Youtube</a></li>
+                    <li><a href="">Perfil no Facebook</a></li>
+                </ul>
+            </aside>
+        </article>
+
+    </main>
+
+    <footer>
+        <h2>Exemplo de site com tags semânticas</h2>
+        <p>Desenvolvido em <time datetime="2024-08-19">19/08/2024</time> no Senac Penha</p>
+    </footer>
+
+    <!-- Tags semânticas para blocos/áreas de conteúdo -->
+    <!-- header: cabeçalho/topo -->
+    <!-- nav: menu de navegação principal -->
+    <!-- footer: rodapé/inferior -->
+    <!-- main: grupo de áreas de conteúdo (usado só 1x por pág) -->
+
+    <!-- article: artigo, bloco de conteúdo de alta relevância -->
+    <!-- section: seção, bloco de conteúdos de importância intermediária -->
+    <!-- aside: bloco de conteúdo complementar, tangencial, auxiliar -->
+
+
+</body>
+
+</html>

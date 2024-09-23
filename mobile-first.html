@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Responsivo - Mobile First</title>
+
+    <style>
+        /* Etapa 1: regras de uso geral, regras comuns, regras que talvez não mudem mesmo em telas maiores e etc. */
+
+        *, *::after, *::before { box-sizing: border-box;}
+
+        /* Definindo o tamanho base da fonte. */
+        html {font-size: 10px;}
+
+        body{
+            font-family: Verdana;
+            background-color: lightblue;
+        }
+
+        span{
+            background-color: rgb(233, 191, 7);
+            color: white;
+            padding: .5rem; /* Podemos omitir o zero */
+        }
+
+        .container{
+            background-color: white;
+            width: 95vw;
+            margin: auto;
+            padding: .8rem;
+        }
+
+        figure{
+            margin: 0;
+            text-align: center;
+        }
+
+        img{ max-width: 100%; }
+
+        h1{ font-size: 4rem; }
+
+        h2{ font-size: 3rem; }
+
+        p{ font-size: 2rem; }
+
+        /* Etapa 2: regras de uso condicional, regras definidas através de Media Queres conforme tamanho de tela necessário/desejado*/
+
+        /* Regra condicional para telas a partir de 623px. portanto, as regras contidas aqui funcionarão somente quando estas condições forem atendidas. 
+        
+        Obs: não há tamanho perfeito para colocar na condição. Sempre avalie de acordo com seu conteúdo e layout conforme as testes no simulador/aparelho.  */
+
+        @media screen and (min-width: 623px) {
+            body { background-color: gold; }
+            html {font-size: 15px;}
+        }
+
+        @media screen and (min-width:789px) {
+            .container {
+                max-height: 700vw;
+                border-radius: 15px;
+                box-shadow: 8px 8px 10px orange;   
+            }
+
+            h1 { text-align: center;}
+
+            h2 { border-left: solid;
+                padding-left: 9px; }
+
+            span { 
+                background-color: rgb(0, 0, 0); 
+                border-radius: 20px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Media Queries - Abordagem <span>Mobile First</span></h1>
+        <hr>
+        <h2>Conceitos</h2>
+        <p>São regras especiais em que criamos alterações na página de acordo com <b>determinadas condições</b>.</p>
+        <p>Tabém são conhecidas como <b>breakpoints</b> (pontos de adaptação).</p>
+        <h2>Aplicação</h2>
+        <p>Media Queries são aplicadas de acordo com a estratégia usada para design responsivo.</p>
+
+        <ul>
+            <li><b>Mobile First: telas pequenas para telas grandes</b></li>
+            <li>Desktop First: telas grandes para telas pequenas</li>
+        </ul>
+
+        <figure>
+            <img src="imagens/front-end.jpg" alt="">
+            <figcaption>Design Responsivo<figcaption>
+        </figure>
+    </div>
+
+</body>
+
+</html>
+
+
+<!-- Exercício
+- Crie uma nova Media Query para telas a partir de 789px
+que faça as seguintes alterações:
+
+    -Container: largura máxima de 700px, borda arredondada e sombra de sua preferência
+    -h1: centralizado
+    -span: mude a cor de fundo e arredonde
+    -h2: borda somente à esquerda e espaçamento interno
+    somente à esquerda -->

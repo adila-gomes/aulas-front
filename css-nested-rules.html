@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Nestin</title>
+
+    <style>
+        .container {
+            background-color: #a9c7b7;
+            margin: auto;
+            width: 80%;
+            padding: 1%; 
+
+            .topo {
+                background-color: #d3e9c4;
+                text-align: center;
+            
+                a {
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 20ps;
+                color: black;
+
+                /* Nesting Selector */
+                 &:hover { color: rgb(230, 141, 8);}
+                }
+            }
+        }
+
+        .conteudo {
+            background-color: #d3e9c4;
+            padding: 1%;
+
+            .produto {
+                border: solid 2px;
+                margin: 10px;
+
+                h3 {
+                text-transform: uppercase;
+                color: #63756b;
+                }
+            }
+        }
+    </style>
+
+    <h1>Aninhamento em regras CSS</h1>
+    <p><i>(Nestin/Nested Rules)</i></p>
+    <hr>
+
+    <div class="container">
+        <header class="topo">
+            <h2>Exemplo</h2>
+            <nav>
+                <a href="">Link 1</a>
+                <a href="">Link 2</a>
+            </nav>
+        </header>
+
+    <main class="conteudo">
+        <article class="produto">
+            <h3>Teste 1</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </article>
+        <article class="produto">
+            <h3>Teste 2</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </article>
+    </main>
+    </div>
+
+</head>
+
+</body>
+
+</html>

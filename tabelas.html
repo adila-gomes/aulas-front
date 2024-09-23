@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Tabulados</title>
+</head>
+<body>
+    <h1>Exemplo de tabelas</h1>
+    <hr>
+
+    <table border="1">
+        <caption>Relação de Clientes</caption>
+        <thead>
+            <tr>
+                <th>País</th>
+                <th>Nome</th>
+                <th>Cidade</th>
+                <th>Contato</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr><!-- Rowspan é a mesclagem de células porém verticalmente -->
+                <td rowspan="4">Brasil</td>
+                <td>Uberlino</td>
+                <td>Uberlândia</td>
+                <td>11-95223-1098</td>
+            </tr>
+        
+            <tr>
+                <td>Bolsonaro</td>
+                <td>Chic Chic Bahia</td>
+                <td>11-95368-1428</td>
+            </tr>
+
+            <tr>
+                <td>Norbit</td>
+                <td>Los Angeles</td>
+                <td>11-94879-3157</td>
+            </tr>
+
+            <tr>
+                <td>Tiago</td>
+                <td>Senac</td>
+                <td>11-94879-3157</td>
+            </tr>
+        </tbody>
+            <tfoot> <!-- Rodapé da tabela (opcional) -->
+                <tr> <!-- Colsplan mescla colunas horizontalmente -->
+                    <td colspan="4">Total de Clientes: 4</td>
+                </tr>
+            </tfoot>
+
+    </table>
+
+</body>
+</html>

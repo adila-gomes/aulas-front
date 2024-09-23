@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Trabalhando com tags/atributos para formulários</h1>
+    <hr>
+
+    <form action="#" method="post">
+
+        <p>
+            <label for="nome">Nome completo:</label>
+            <input required type="text" name="nome" id="nome"> 
+            <!-- name: Back-End - id: Front-End -->
+        </p>
+        
+        <p>
+            <label for="email">Endereço de e-mail:</label>
+            <input required type="email" name="email" id="email">
+        </p>
+
+        <p>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone">
+        </p>
+
+        <div>
+         <p>Deseja receber informativos?</p>
+            <input type="radio" name="informativos" id="sim" value="Sim">
+            <label for="">Sim</label>
+        <!-- Para que as opçoes funcionem é preciso ter o mesmo "name" e "id" diferentes. -->
+            <input type="radio" name="informativos" id="nao" value="Não">
+            <label for="">Não</label>
+        <!-- Bolinha: radio - Caixinha: checkbox -->
+        </div>
+
+        <div>
+        <p>Escolha as tecnologias de sua preferência:</p>
+            <input type="checkbox" name="interesses" id="css" value="HTML">
+            <label for="css">CSS</label>
+        <!-- O "name" cria uma relação entre as opções. -->
+            <input type="checkbox" name="interesses" id="html" value="CSS">
+            <label for="html">HTML</label>
+        <!-- O "value" é o valor que irá ser registrado em sistema, por exemplo no banco de dados.-->
+            <input type="checkbox" name="interesses" id="js" value="JS">
+            <label for="js">JS</label>
+        </div>
+
+        <p>
+            <label for="idade">Idade:</label>
+            <input min="14" max="80" type="number" name="idade" id="idade">  
+        </p>
+
+        <p>
+            <label for="nascimento">Data de nascimento:</label>
+            <input min="2021-01-01" max="2024-09-01" type="date" name="nascimento" id="nascimento">
+        </p>
+
+        <p>
+            <label for="assunto">Assunto:</label>
+            <select name="assunto" id="assunto">
+            <!-- Deixe sempre o primeiro "opcion" vazio. -->
+                <option value=""></option>
+                <option value="3">Reclamações</option> 
+                <option value="10">Elogios</option> 
+                <option value="25">Dúvidas</option> 
+                <option value="7">Outros</option> 
+            </select>
+        </p>
+
+        <p>
+            <label for="mensagem">Mensagem:</label> <br>
+            <textarea required minlength="5" maxlength="20" name="mensagem" id="mensagem" cols="25" rows="25"></textarea> <!-- Sempre fechar o textarea junto ao fechamento ></textarea> -->
+            <!-- "cols"= coluna ou quantidade de letras.
+                 "rows"= linhas ouquantidades de parágrafos. -->
+            <!-- "minlength"= minimo de caracteres. 
+                 "maxlength"= máximo de caracteres.-->
+        </p>
+
+        <button type="submit">Enviar dados</button>
+        
+    </form>
+
+</body>
+</html>
+
+<!-- "required" para colocar como campo obrigatório. -->
+
+<!-- Sobre elementos BLOCO/BLOCK e LINHA/INLINE
+ - BLOCO (ocupam todo o espaço disponível na área em que estão)
+ 
+ Ex: h1/h6, p, ul/ol/li, 
+
+ - LINHA (ocupam somente o espaço necessário para seu próprio conteúdo. E normalmente estão dentro de blocos ou outras tags)
+ 
+ Ex: b, i, mark,
+ -->
